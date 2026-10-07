@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="head">
+    <strong>ListLift</strong>
+    <span id="usage" class="usage"></span>
+  </div>
+  <div class="body">
+    <p class="hint">Generate a full Etsy listing from a product photo. On an Etsy
+      listing page, use the ✨ button bottom-right for inline fill.</p>
+
+    <label>Product photo</label>
+    <input id="file" type="file" accept="image/*" />
+    <label>A few words (optional)</label>
+    <input id="kw" type="text" placeholder="e.g. handmade ceramic mug, boho" />
+    <button id="go" class="primary">Write my listing</button>
+
+    <div id="status" class="status"></div>
+
+    <div id="result" hidden>
+      <div class="field"><h4>Title <button class="copy" data-k="title">Copy</button></h4><p id="r-title"></p></div>
+      <div class="field"><h4>Tags <button class="copy" data-k="tags">Copy</button></h4><p id="r-tags"></p></div>
+      <div class="field"><h4>Description <button class="copy" data-k="description">Copy</button></h4><p id="r-desc"></p></div>
+    </div>
+
+    <div id="paywall" hidden class="paywall">
+      <p>You've used your free listings.</p>
+      <button id="upgrade" class="primary">Upgrade — $9/mo unlimited</button>
+    </div>
+  </div>
+  <div class="foot">
+    <button id="devpaid" class="dev">I paid (dev toggle)</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

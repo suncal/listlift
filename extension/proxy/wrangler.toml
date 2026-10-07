@@ -1,0 +1,12 @@
+name = "listlift-proxy"
+main = "worker.js"
+compatibility_date = "2026-01-01"
+
+# Deploy:
+#   npm i -g wrangler
+#   wrangler login
+#   wrangler secret put ANTHROPIC_API_KEY   # paste your key when prompted
+#   wrangler deploy
+#
+# After deploy, copy the printed https://listlift-proxy.<subdomain>.workers.dev URL
+# and set PROXY_URL in ../background.js to that URL + "/generate".

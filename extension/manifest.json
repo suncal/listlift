@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "ListLift — AI Etsy Listing Writer",
+  "version": "0.1.0",
+  "description": "Write a fully SEO-optimized Etsy listing in one click: a keyword-rich title, all 13 tags, and a polished description from your photo.",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "host_permissions": [
+    "https://*.etsy.com/*",
+    "https://*.workers.dev/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "ListLift"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.etsy.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
