@@ -1,5 +1,9 @@
 # ListLift — AI Etsy Listing Writer (Chrome extension)
 
+[![Live demo](https://img.shields.io/badge/live-demo-0E6B52)](https://suncal.github.io/listlift/) [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) [![Stars](https://img.shields.io/github/stars/suncal/listlift?style=social)](https://github.com/suncal/listlift/stargazers)
+
+![screenshot](docs/hero.png)
+
 Write a full, SEO-optimized Etsy listing — title, all 13 tags, description —
 from a product photo, in one click. Built to run solo from anywhere.
 
@@ -71,3 +75,9 @@ Also confirm `manifest.json` `host_permissions` covers your worker domain
 ```
 Scoreboard: installs → activations → paid conversions → MRR.
 ```
+
+---
+
+**If this is useful to you, a ⭐ on the repo helps other people find it.** Issues and pull requests are welcome.
+
+Built by [Priyankar "Sunny" Chakraborty](https://github.com/suncal) · [everbuiltstudio.com](https://everbuiltstudio.com)
